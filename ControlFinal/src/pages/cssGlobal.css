@@ -1,0 +1,50 @@
+@import'./cad/index.css';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: rgba(38, 38, 38, 1);
+    color: white;
+
+}
+
+
+
+/*   
+versão PC
+*/
+header {
+    background-color: rgba(13, 13, 13, 1);
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+#logo_header {
+    height: 5rem;
+    width: 4rem;
+}
+
+#title_header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 4rem
+}
+
+#title_txt {
+    margin-left: 0.3em;
+    font-size: 3rem;
+}

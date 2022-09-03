@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #4880e5;
+    background-image:
+        radial-gradient(at 47% 33%, hsl(240.00, 69%, 80%) 0, transparent 59%),
+        radial-gradient(at 82% 65%, hsl(90.00, 0%, 99%) 0, transparent 55%);
+        height: 100vh;
+}
+
+header {
+    margin: 0;
+    background-color: black;
+    color: wheat;
+    height: 5em;
+
+}
+
+#title {
+    text-align: center;
+    font-size: 0.7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20em;
+}
+section{
+    margin-top: 30em;
+}
+#container {
+    position: absolute;
+    padding: 5em;
+
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(152, 88, 246, 0.8);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+#token1 {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    background-color: #A6A6A6;
+    border-radius: 0.5em;
+    padding: 0.4em;
+
+}
+
+#token2 {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    background-color: #A6A6A6;
+    border-radius: 0.5em;
+    padding: 0.4em;
+}
+
+
+#icon_covert {
+    height: 3em;
+    width: 3em;
+    margin: 0 auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#btn_convert{
+margin-left: 7em;
+    margin-top: 2em;
+    position: absolute;
+    height: 2em;
+    width: 10em;
+    border-radius: 1em;
+    border-color: transparent;
+}
+
+#btn_convert:hover {
+    transition: 300ms;
+    background-color: black;
+    color: white;
+}
+
+
+#inp_number_moeda1{
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 1.6em;
+    text-align: center;
+    margin: 5px;
+}
+
+#token1,#token2{
+    background-color: white;
+}
+
+#inp_number_moeda2{
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 1.2em;
+    width: 140px;
+    padding: 2px;
+    margin:5px ;
+    text-align: center;
+}
+
+
+
+#menu_bar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+#btn_cotacao{
+        position: absolute;
+        border-radius: 5px;
+        border-color: transparent;
+        cursor: pointer;
+    }
+
+    #cotacao_container{
+        background-color: black;
+        position: absolute;
+
+    }
+#cotacao{
+    display: flex;
+    justify-content: space-between;
+}
+    .token_cotacao{
+        background-color: #FFFFFF;
+        height: 2.7em;
+        width: 28.3vh;
+        margin: 2px;
+        border-radius: 2px;
+        display: flex;
+        justify-content: baseline;
+    
+    }
+    .token_cotacao span{
+        margin-top: 10px ;
+        margin-left: 10px;
+    }
+
+ 
+  

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <title>Document</title>
+
+
+
+</head>
+
+<body>
+    <header>
+        <div id="title_header">
+            <img id="logo_header" src="../img/logo projeto 1.png" alt="">
+            <h1 id="title_txt">ControlFinal</h1>
+
+    </header>
+    </style>
+    <div id="con">
+        <article>
+            <section id="section-article">
+                <div id="sald">
+                    <h4>Saldo disponível</h4>
+                    <p>R$: <span id="valor_saldo"></span></p>
+                </div>
+
+
+                <button class="btns_nav" onclick="openModalCadDespesa()">Despesas</button>
+                <br>
+                <button class="btns_nav" onclick="openModalCadDespesaFixas()">Despesas fixas</button>
+                <br>
+                <button class="btns_nav" onclick="openModalEntradas()">Entradas</button>
+            </section>
+        </article>
+        <aside>
+            <section id="section-aside">
+                <div id="container-header">
+                    <h1>Bom dia, Kayk Junior!!</h1>
+                </div>
+
+                <div id="grafic">
+                    <div id="top_grafic">
+                        <div id="grafic-01"></p></div>
+                    </div>
+
+                </div>
+                <hr>
+
+                    <div id="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Despesa</th>
+                                    <th>Valor</th>
+                                    <th>Data</th>
+                                    <th>Tipo</th>
+                                    <th>Data vencimento</th>
+                                    <th>Situação</th>
+                            </thead>
+                            <tbody id="tbody">
+                                
+                                
+                            </tbody>
+                            
+                    </div>
+                    
+            </section>
+
+            <section id="modais">
+
+                <div class="modal-container-01">
+                    <div class="modal-despesas">
+                        <input type="text" class="inputs" id="inp_nome_despesa-rotativa" placeholder="Nome da despesa">
+                        <input type="number" class="inputs" id="inp_valor" placeholder="Valor">
+                        <label for="inp_data_inicio">Data de inicio</label>
+                        <input type="date" class="inputs" id="inp_date_inicio">
+                        <label for="inp_date_vencimento">Data de vencimento</label>
+                        <input type="date" class="inputs" id="inp_date_vencimento">
+                        <select name="situacao" class="inputs" id="inp_situacao">
+                            <option value="Em aberto">Em aberto</option>
+                            <option value="pago">Pago</option>
+                        </select>
+                        <div id="btns">
+                            <button class="btns_form" onclick="closeModalCadDespesa()">Cancelar</button>
+                            <button class="btns_form" onclick="CAD_Despesa()">Salvar</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="modal-container-02">
+                    <div class="modal-despesas-fixas">
+                        <input type="text" class="inputs" id="inp_nome_despesa_fixa" placeholder="Nome da despesa">
+                        <input type="number" class="inputs" id="inp_valor_fixa" placeholder="Valor">
+                        <label for="inp_data_inicio_fixa">Data de inicio</label>
+                        <input type="date" class="inputs" id="inp_date_inicio_fixa">
+                        <label for="inp_date_vencimento_fixa">Data de vencimento</label>
+                        <input type="date" class="inputs" id="inp_date_vencimento_fixa">
+                        <select name="situacao" class="inputs" id="inp_situacao_fixa">
+                            <option value="Em aberto">Em aberto</option>
+                            <option value="pago">Pago</option>
+                        </select>
+                        <div id="btns">
+                            <button class="btns_form" onclick="closeModalCadDespesafixas()">Cancelar</button>
+                            <button class="btns_form" onclick="CAD_Despesa_fixa()">Salvar</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="modal-container-03">
+                    <div class="modal-entradas">
+                        <input type="text" class="inputs" id="inp_entrada_origem" placeholder="Origem">
+                        <input type="number" class="inputs" id="inp_entrada_valor" placeholder="Valor">
+                        <input type="date" class="inputs" id="inp_entrada_data">
+
+                        <div id="btns">
+                            <button class="btns_form" onclick="closeModalEntradas()">Cancelar</button>
+                            <button class="btns_form" onclick="cadastra_entradas()">Salvar</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+    </div>
+
+    
+    </aside>
+    </div>
+
+
+
+
+    <script src="./home.js">
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="./index.js"></script>
+    <header>
+        <h1 id="title">To convert currencies</h1>
+
+        <div id="menu_bar">
+            <button id="btn_cotacao" onclick="teste()"><img src="img/cardapio.png" alt=""></button>
+        </div>
+
+    </header>
+
+    <div id="cotacao_container">
+        <div id="cotacao">
+            <div class="token_cotacao" id="token_cotacao_BTC">
+                 <img src="img/iconBTC.png" alt="">
+                    <span class="span_price" >R$: <p id="price_token_BTC"></p></span>
+            </div>
+
+
+            <div class="token_cotacao" id="token_cotacao_ETH">
+
+                 <img src="img/iconETH.png" alt="">
+                <span class="span_price" >R$: <p id="price_token_ETH"></p></span>
+            </div>
+            <div class="token_cotacao" id="token_cotacao_AXS">
+
+                 <img src="img/iconAXS.png" alt="">
+                <span class="span_price" >R$: <p id="price_token_AXS"></p></span>
+            </div>
+
+
+            <div class="token_cotacao" id="token_cotacao_DOGE">
+                <img src="img/iconDOGE.png" alt="">
+                <span class="span_price" >R$: <p id="price_token_DOGE"></p></span>
+            </div>
+
+            
+            <div class="token_cotacao" id="token_cotacao_LTC">
+
+                 <img src="img/iconLTC.png" alt="">
+                <span class="span_price" >R$: <p id="price_token_LTC"></p></span>
+            </div>
+            
+            
+            <div class="token_cotacao" id="token_cotacao_SHIB">
+                
+                <img src="img/iconSHIB.png" alt="">
+                <span class="span_price">R$: <p id="price_token_SHIB"></p></span>
+            </div>
+           
+           
+            <div class="token_cotacao" id="token_cotacao_SOL">
+
+                 <img src="img/iconSOL.png" alt="">
+                <span class="span_price" >R$: <p id="price_token_SOL"></p></span>
+            </div>
+
+        </div>
+    </div>
+
+
+    <section>
+
+    </section>
+    <main>
+        <div id="container">
+            <div id="token1">
+                <input type="number" id="inp_number_moeda1">
+                <select name="moeda1" id="moeda1">
+                    <option value="BTC">Bitcoin</option>
+                    <option value="ETH">Ethereum</option>
+                    <option value="AXS">Axie Infinity</option>
+                    <option value="DOGE">Dogecoin</option>
+                    <option value="LTC">Litecoin</option>
+                    <option value="SHIB">Shiba Inu</option>
+                    <option value="SOL">Solana</option>
+                </select>
+                <img src="img/iconBTC.png" alt="" id="icon_1">
+
+            </div>
+
+            <div id="icon_covert">
+                <img src="img/transferir.png" alt="" id="icon_covert">
+            </div>
+
+
+            <div id="token2">
+                <p id="inp_number_moeda2">000.00000</p>
+                <select name="moeda2" id="moeda2">
+                    <option value="ETH">Ethereum</option>
+                    <option value="BTC">Bitcoin</option>
+                    <option value="AXS">Axie Infinity</option>
+                    <option value="DOGE">Dogecoin</option>
+                    <option value="LTC">Litecoin</option>
+                    <option value="SHIB">Shiba Inu</option>
+                    <option value="SOL">Solana</option>
+                </select>
+
+                <img src="img/iconETH.png" alt="" id="icon_2">
+            </div>
+
+            <button id="btn_convert" onclick="fetch_API()">Converter</button>
+    </main>
+
+
+</body>
+
+</html>

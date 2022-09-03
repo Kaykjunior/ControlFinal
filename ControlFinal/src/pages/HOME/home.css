@@ -1,0 +1,379 @@
+@import '../cssGlobal.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#con {
+    display: flex;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+#con article aside {
+    padding-bottom: 500em;
+    margin-bottom: -500em;
+}
+
+
+article {
+    margin-top: 8rem;
+    background-color: rgba(13, 13, 13, 1);
+    width: 15%;
+    display: inline-block;
+    min-height: 90vh;
+}
+
+aside {
+    margin-top: 8rem;
+
+    width: 85%;
+
+    min-height: 100%;
+}
+
+#section-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#sald>h4 {
+    margin-top: 1rem;
+    font-size: 1.9rem;
+    text-align: center;
+}
+
+#sald>p {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bolder;
+    color: rgba(2, 161, 66, 1);
+    margin-bottom: 10rem;
+}
+
+
+
+.btns_nav {
+    margin-bottom: 5rem;
+    background-color: rgba(2, 161, 66, 1);
+    color: rgba(255, 255, 255, 1);
+    height: 3rem;
+    width: 15rem;
+    max-width: 20rem;
+    max-height: 4rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border: solid black 1px;
+
+}
+
+.btns_nav:hover {
+    transition: 200ms;
+
+    transform: scale(1.1);
+
+}
+
+#section-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-header>h1 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 2.9rem;
+    margin-top: 1rem;
+}
+
+/*
+Grafic  
+*/
+
+#grafic {
+    margin-top: 10rem;
+
+
+}
+
+
+#grafic-top {
+    border: solid black 1px;
+    height: 4.3rem;
+    width: 75rem;
+}
+
+
+#top_grafic {
+    width: 75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(2, 161, 66, 1) ;
+    border: solid black 1px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#grafic-01 {
+    width: 0;
+    height: 5rem;
+    background-color: darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+Table
+*/
+
+hr{
+    margin-top: 3rem;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 10rem;
+    -webkit-box-shadow: 0px 0px 44px 15px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 0px 0px 44px 15px rgba(0, 0, 0, 0.28);
+    box-shadow: 0px 0px 44px 15px rgba(0, 0, 0, 0.28);
+    margin-bottom: 10rem;
+}
+
+table:hover {
+    transition: 400ms;
+    -webkit-box-shadow: 0px 0px 44px 15px rgba(2, 161, 66, 1);
+    -moz-box-shadow: 0px 0px 44px 15px rgba(2, 161, 66, 1);
+    box-shadow: 0px 0px 44px 15px rgba(2, 161, 66, 1);
+}
+
+td,
+th {
+    border: solid 2px black;
+    padding: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+
+}
+
+tr td:hover {
+    transition: 300ms;
+    background-color: rgba(2, 161, 66, 1);
+}
+
+table>thead>tr>th {
+    background-color: rgba(13, 13, 13, 1);
+
+}
+
+table>tbody>tr>td {
+    background-color: rgba(217, 217, 217, 1);
+    color: black;
+
+}
+
+
+/*
+Modais
+*/
+
+#modais {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.modal-container-01,
+.modal-container-02,
+.modal-container-03 {
+    /* Centralizar */
+    left: 50%;
+    top: 50%;
+    margin-left: -20rem;
+    /* Metade do valor da Largura */
+    margin-top: -25rem;
+    /* Metade da valor da Altura */
+    position: absolute;
+
+
+    height: 50rem;
+    width: 40rem;
+    border-radius: rem;
+    background-color: rgba(2, 161, 66, 1);
+    z-index: 999;
+    position: fixed;
+    justify-content: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px -2px 35px -5px rgba(0, 0, 0, 0.75) inset;
+    -webkit-box-shadow: -1px -2px 35px -5px rgba(0, 0, 0, 0.75) inset;
+    -moz-box-shadow: -1px -2px 35px -5px rgba(0, 0, 0, 0.75) inset;
+}
+
+.modal-despesas-fixas,
+.modal-despesas,
+.modal-entradas,
+.modal-despesas {
+    display: flex;
+    flex-direction: column;
+}
+
+.active {
+    display: flex;
+
+}
+
+.active .modal-despesas,
+.modal-despesas-fixas,
+.modal-entradas {
+    animation: modal .4s;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(-10rem, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0, );
+    }
+}
+
+
+
+
+#modais {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.modal-container-01,
+.modal-container-02,
+.modal-container-03 {
+    /* Centralizar */
+    left: 50%;
+    top: 50%;
+    margin-left: -20rem;
+    /* Metade do valor da Largura */
+    margin-top: -25rem;
+    /* Metade da valor da Altura */
+    position: absolute;
+
+
+    height: 50rem;
+    width: 40rem;
+    border-radius: 2rem;
+    background-color: rgba(2, 161, 66, 1);
+    z-index: 999;
+    position: fixed;
+    justify-content: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px -2px 35px -5px rgba(0, 0, 0, 0.75) inset;
+    -webkit-box-shadow: -1px -2px 35px -5px rgba(0, 0, 0, 0.75) inset;
+    -moz-box-shadow: -1px -2px 35px -5px rgba(0, 0, 0, 0.75) inset;
+}
+
+.modal-despesas-fixas,
+.modal-despesas,
+.modal-entradas,
+.modal-despesas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.active {
+    display: flex;
+
+}
+
+.active .modal-despesas,
+.modal-despesas-fixas,
+.modal-entradas {
+    animation: modal .4s;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(-10rem, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0, );
+    }
+}
+
+
+.inputs {
+    text-align: center;
+    width: 22rem;
+    height: 3rem;
+    margin: 0.5rem;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 1);
+    font-size: 1.5rem;
+    border-radius: .5rem;
+}
+
+#btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btns_form {
+    display: inline-block;
+    text-align: center;
+    width: 10.1rem;
+    height: 3rem;
+    margin: 5rem 1rem 0 1rem;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 1);
+    border-radius: .5rem;
+}
+
+.modal-despesas,
+.modal-despesas-fixas,
+.modal-entradas>label {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.inputs::placeholder {
+    font-size: 1.5rem;
+    color: black;
+}
